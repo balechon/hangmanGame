@@ -1,5 +1,6 @@
 import random
 import os
+import time
 
 def read_data(): 
     with open("./data/data.txt",'r',encoding='utf-8') as df:
@@ -13,18 +14,28 @@ def removeAcent(value):
 
 def startGame(data):
     randomWord=random.choice(data)
-    print(randomWord)
+    # print(randomWord)
     word=[letter for letter in randomWord]
     playerWord=['_' for _ in randomWord]
 
     while word !=playerWord:
+        print('Adivina la Palabra')
         printList(playerWord)
-        choice=input('Escoge una letra: ')
-        for i in range(0,len(word)):
-            if word[int(i)]==choice:
-                playerWord[int(i)]= choice
-        os.system('clear')
-
+        try:
+            choice=input('Escoge una letra: ')
+            if choice.isnumeric():
+                raise ValueError('Numbers are not allowed')
+                
+            for i in range(0,len(word)):
+                if word[int(i)]==choice.upper():
+                    playerWord[int(i)]= choice.upper()
+            os.system('clear')
+        except ValueError as ve:
+            os.system('clear')
+            print(f'  ****** Error: {ve} *******')
+            
+            time.sleep(2.5)
+            os.system('clear')
     print(f'*******GANASTE**** la palabra era {randomWord}')
 
 def printList(mylist):
