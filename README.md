@@ -1,5 +1,5 @@
 # hangmanGame
-Thi repository have the code of the hagmanGame made in Python
+Thi repository have the code of the hangmanGame made in Python
 
 Este repositorio contiene codigo hecho en python basado en el juego del ahorcado
 
