@@ -1,7 +1,9 @@
 # hangmanGame
-This repository have the code of the hangmanGame made in Python, no needs external libraries
+This repository have the code of the hangmanGame made in Python, 
+no needs external libraries
 
-Este repositorio contiene codigo hecho en python basado en el juego del ahorcado, no se necesita de librerias externas
+Este repositorio contiene codigo hecho en python basado en el juego del ahorcado, 
+no se necesita de librerias externas
 
 Capturas del Funcionamiento / Screenshots
 ![Screenshot 2021-04-13 113330](https://user-images.githubusercontent.com/75377942/114588510-61f7a800-9c4c-11eb-8272-bc15aeae1c71.jpg)
