@@ -1,5 +1,5 @@
 # hangmanGame
-Thi repository have the code of the hangmanGame made in Python, no needs external libraries
+This repository have the code of the hangmanGame made in Python, no needs external libraries
 
 Este repositorio contiene codigo hecho en python basado en el juego del ahorcado, no se necesita de librerias externas
 
